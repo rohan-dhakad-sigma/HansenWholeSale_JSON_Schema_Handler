@@ -104,7 +104,8 @@
       },
       "required": [
         "email",
-        "firstname"
+        "firstname",
+        "lastname"
       ],
       "title": "Customer"
     },

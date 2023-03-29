@@ -57,7 +57,8 @@
       },
       "required": [
         "email",
-        "firstname"
+        "firstname",
+        "lastname"
       ],
       "title": "Welcome6"
     },
