@@ -18,8 +18,7 @@
       },
       "required": [
         "customer",
-        "password",
-        "redirectUrl"
+        "password"
       ],
       "title": "Welcome9"
     },
@@ -104,29 +103,8 @@
         }
       },
       "required": [
-        "addresses",
-        "confirmation",
-        "created_at",
-        "created_in",
-        "custom_attributes",
-        "default_billing",
-        "default_shipping",
-        "disable_auto_group_change",
-        "dob",
         "email",
-        "extension_attributes",
-        "firstname",
-        "gender",
-        "group_id",
-        "id",
-        "lastname",
-        "middlename",
-        "prefix",
-        "store_id",
-        "suffix",
-        "taxvat",
-        "updated_at",
-        "website_id"
+        "firstname"
       ],
       "title": "Customer"
     },
@@ -204,29 +182,6 @@
           }
         }
       },
-      "required": [
-        "city",
-        "company",
-        "country_id",
-        "custom_attributes",
-        "customer_id",
-        "default_billing",
-        "default_shipping",
-        "extension_attributes",
-        "fax",
-        "firstname",
-        "id",
-        "lastname",
-        "middlename",
-        "postcode",
-        "prefix",
-        "region",
-        "region_id",
-        "street",
-        "suffix",
-        "telephone",
-        "vat_id"
-      ],
       "title": "Address"
     },
     "CustomAttribute": {
@@ -240,10 +195,6 @@
           "type": "string"
         }
       },
-      "required": [
-        "attribute_code",
-        "value"
-      ],
       "title": "CustomAttribute"
     },
     "AddressExtensionAttributes": {
@@ -268,12 +219,6 @@
           "$ref": "#/definitions/AddressExtensionAttributes"
         }
       },
-      "required": [
-        "extension_attributes",
-        "region",
-        "region_code",
-        "region_id"
-      ],
       "title": "Region"
     },
     "CustomerExtensionAttributes": {
@@ -290,11 +235,6 @@
           "type": "string"
         }
       },
-      "required": [
-        "amazon_id",
-        "is_subscribed",
-        "vertex_customer_code"
-      ],
       "title": "CustomerExtensionAttributes"
     }
   }
