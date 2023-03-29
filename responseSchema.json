@@ -1,5 +1,8 @@
 {
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome7",
   "definitions": {
+    "Welcome7": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -53,11 +56,23 @@
         }
       },
       "required": [
+        "addresses",
+        "created_at",
+        "created_in",
+        "custom_attributes",
+        "disable_auto_group_change",
         "email",
+        "extension_attributes",
         "firstname",
-        "lastname"
+        "group_id",
+        "id",
+        "lastname",
+        "store_id",
+        "updated_at",
+        "website_id"
       ],
-      "title": "Welcome6",
+      "title": "Welcome7"
+    },
     "CustomAttribute": {
       "type": "object",
       "additionalProperties": false,
@@ -70,6 +85,10 @@
           "format": "integer"
         }
       },
+      "required": [
+        "attribute_code",
+        "value"
+      ],
       "title": "CustomAttribute"
     },
     "ExtensionAttributes": {
@@ -80,6 +99,9 @@
           "type": "boolean"
         }
       },
+      "required": [
+        "is_subscribed"
+      ],
       "title": "ExtensionAttributes"
     }
   }

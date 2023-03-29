@@ -1,5 +1,8 @@
 {
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome10",
   "definitions": {
+    "Welcome10": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -8,43 +11,18 @@
         },
         "password": {
           "type": "string"
-        },
-        "redirectUrl": {
-          "type": "string"
         }
       },
-      "title": "Welcome9",
+      "required": [
+        "customer",
+        "password"
+      ],
+      "title": "Welcome10"
+    },
     "Customer": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "group_id": {
-          "type": "integer"
-        },
-        "default_billing": {
-          "type": "string"
-        },
-        "default_shipping": {
-          "type": "string"
-        },
-        "confirmation": {
-          "type": "string"
-        },
-        "created_at": {
-          "type": "string"
-        },
-        "updated_at": {
-          "type": "string"
-        },
-        "created_in": {
-          "type": "string"
-        },
-        "dob": {
-          "type": "string"
-        },
         "email": {
           "type": "string"
         },
@@ -53,45 +31,6 @@
         },
         "lastname": {
           "type": "string"
-        },
-        "middlename": {
-          "type": "string"
-        },
-        "prefix": {
-          "type": "string"
-        },
-        "suffix": {
-          "type": "string"
-        },
-        "gender": {
-          "type": "integer"
-        },
-        "store_id": {
-          "type": "integer"
-        },
-        "taxvat": {
-          "type": "string"
-        },
-        "website_id": {
-          "type": "integer"
-        },
-        "addresses": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Address"
-          }
-        },
-        "disable_auto_group_change": {
-          "type": "integer"
-        },
-        "extension_attributes": {
-          "$ref": "#/definitions/CustomerExtensionAttributes"
-        },
-        "custom_attributes": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/CustomAttribute"
-          }
         }
       },
       "required": [
@@ -100,135 +39,6 @@
         "lastname"
       ],
       "title": "Customer"
-    },
-    "Address": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "integer"
-        },
-        "customer_id": {
-          "type": "integer"
-        },
-        "region": {
-          "$ref": "#/definitions/Region"
-        },
-        "region_id": {
-          "type": "integer"
-        },
-        "country_id": {
-          "type": "string"
-        },
-        "street": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "company": {
-          "type": "string"
-        },
-        "telephone": {
-          "type": "string"
-        },
-        "fax": {
-          "type": "string"
-        },
-        "postcode": {
-          "type": "string"
-        },
-        "city": {
-          "type": "string"
-        },
-        "firstname": {
-          "type": "string"
-        },
-        "lastname": {
-          "type": "string"
-        },
-        "middlename": {
-          "type": "string"
-        },
-        "prefix": {
-          "type": "string"
-        },
-        "suffix": {
-          "type": "string"
-        },
-        "vat_id": {
-          "type": "string"
-        },
-        "default_shipping": {
-          "type": "boolean"
-        },
-        "default_billing": {
-          "type": "boolean"
-        },
-        "extension_attributes": {
-          "$ref": "#/definitions/AddressExtensionAttributes"
-        },
-        "custom_attributes": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/CustomAttribute"
-          }
-        }
-      },
-      "title": "Address"
-    },
-    "CustomAttribute": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "attribute_code": {
-          "type": "string"
-        },
-        "value": {
-          "type": "string"
-        }
-      },
-      "title": "CustomAttribute"
-    },
-    "AddressExtensionAttributes": {
-      "type": "object",
-      "additionalProperties": false,
-      "title": "AddressExtensionAttributes"
-    },
-    "Region": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "region_code": {
-          "type": "string"
-        },
-        "region": {
-          "type": "string"
-        },
-        "region_id": {
-          "type": "integer"
-        },
-        "extension_attributes": {
-          "$ref": "#/definitions/AddressExtensionAttributes"
-        }
-      },
-      "title": "Region"
-    },
-    "CustomerExtensionAttributes": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "is_subscribed": {
-          "type": "boolean"
-        },
-        "amazon_id": {
-          "type": "string"
-        },
-        "vertex_customer_code": {
-          "type": "string"
-        }
-      },
-      "title": "CustomerExtensionAttributes"
     }
   }
 }
