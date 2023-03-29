@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$ref": "#/definitions/Welcome7",
+  "$ref": "#/definitions/Welcome4",
   "definitions": {
-    "Welcome7": {
+    "Welcome4": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -55,23 +55,7 @@
           }
         }
       },
-      "required": [
-        "addresses",
-        "created_at",
-        "created_in",
-        "custom_attributes",
-        "disable_auto_group_change",
-        "email",
-        "extension_attributes",
-        "firstname",
-        "group_id",
-        "id",
-        "lastname",
-        "store_id",
-        "updated_at",
-        "website_id"
-      ],
-      "title": "Welcome7"
+      "title": "Welcome4"
     },
     "CustomAttribute": {
       "type": "object",
