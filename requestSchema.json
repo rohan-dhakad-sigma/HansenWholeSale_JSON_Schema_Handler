@@ -1,8 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$ref": "#/definitions/Welcome9",
   "definitions": {
-    "Welcome9": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -16,8 +13,7 @@
           "type": "string"
         }
       },
-      "title": "Welcome9"
-    },
+      "title": "Welcome9",
     "Customer": {
       "type": "object",
       "additionalProperties": false,
